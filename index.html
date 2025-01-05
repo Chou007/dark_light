@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>光源控制器</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="light-panel">
+            <div class="drag-handle">
+                <div class="panel-controls">
+                    <button class="control-btn minimize-btn" title="最小化">─</button>
+                    <button class="control-btn lock-btn" title="锁定控件">🔓</button>
+                </div>
+                <div class="drag-dots"></div>
+            </div>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="brightness">亮度控制</label>
+                    <input type="range" id="brightness" min="0" max="100" value="50">
+                    <span class="value">50%</span>
+                </div>
+                <div class="control-group">
+                    <label for="temperature">色温控制</label>
+                    <input type="range" id="temperature" min="1000" max="10000" value="5500">
+                    <span class="value">5500K</span>
+                </div>
+                <button id="fullscreenBtn" class="fullscreen-btn">全屏显示</button>
+            </div>
+        </div>
+    </div>
+    <script src="dragHandler.js"></script>
+    <script src="script.js"></script>
+</body>
+</html> 
